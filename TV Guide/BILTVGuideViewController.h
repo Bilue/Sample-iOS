@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BILViewController : UIViewController
+@interface BILTVGuideViewController : UIViewController
 
 @end

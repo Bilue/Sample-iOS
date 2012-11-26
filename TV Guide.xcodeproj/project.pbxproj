@@ -16,13 +16,14 @@
 		54E6F00C1663470100EBE3ED /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E6F00B1663470100EBE3ED /* Default.png */; };
 		54E6F00E1663470100EBE3ED /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E6F00D1663470100EBE3ED /* Default@2x.png */; };
 		54E6F0101663470100EBE3ED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E6F00F1663470100EBE3ED /* Default-568h@2x.png */; };
-		54E6F0131663470100EBE3ED /* BILViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6F0121663470100EBE3ED /* BILViewController.m */; };
-		54E6F0161663470100EBE3ED /* BILViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E6F0141663470100EBE3ED /* BILViewController.xib */; };
+		54E6F0131663470100EBE3ED /* BILTVGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6F0121663470100EBE3ED /* BILTVGuideViewController.m */; };
+		54E6F0161663470100EBE3ED /* BILTVGuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E6F0141663470100EBE3ED /* BILTVGuideViewController.xib */; };
 		54E6F01E1663470100EBE3ED /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6F01D1663470100EBE3ED /* SenTestingKit.framework */; };
 		54E6F01F1663470100EBE3ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6EFF91663470100EBE3ED /* UIKit.framework */; };
 		54E6F0201663470100EBE3ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6EFFB1663470100EBE3ED /* Foundation.framework */; };
 		54E6F0281663470100EBE3ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54E6F0261663470100EBE3ED /* InfoPlist.strings */; };
-		54E6F02B1663470200EBE3ED /* TV_GuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6F02A1663470200EBE3ED /* TV_GuideTests.m */; };
+		54E6F04C16634A1500EBE3ED /* BILTVGuideControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6F04B16634A1500EBE3ED /* BILTVGuideControllerSpec.m */; };
+		54E6F04E16634AC600EBE3ED /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6F04D16634AC600EBE3ED /* libKiwi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,15 +50,15 @@
 		54E6F00B1663470100EBE3ED /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		54E6F00D1663470100EBE3ED /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		54E6F00F1663470100EBE3ED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		54E6F0111663470100EBE3ED /* BILViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BILViewController.h; sourceTree = "<group>"; };
-		54E6F0121663470100EBE3ED /* BILViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BILViewController.m; sourceTree = "<group>"; };
-		54E6F0151663470100EBE3ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BILViewController.xib; sourceTree = "<group>"; };
+		54E6F0111663470100EBE3ED /* BILTVGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BILTVGuideViewController.h; sourceTree = "<group>"; };
+		54E6F0121663470100EBE3ED /* BILTVGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BILTVGuideViewController.m; sourceTree = "<group>"; };
+		54E6F0151663470100EBE3ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BILTVGuideViewController.xib; sourceTree = "<group>"; };
 		54E6F01C1663470100EBE3ED /* TV GuideTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TV GuideTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E6F01D1663470100EBE3ED /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		54E6F0251663470100EBE3ED /* TV GuideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TV GuideTests-Info.plist"; sourceTree = "<group>"; };
 		54E6F0271663470100EBE3ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		54E6F0291663470100EBE3ED /* TV_GuideTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TV_GuideTests.h; sourceTree = "<group>"; };
-		54E6F02A1663470200EBE3ED /* TV_GuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TV_GuideTests.m; sourceTree = "<group>"; };
+		54E6F04B16634A1500EBE3ED /* BILTVGuideControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILTVGuideControllerSpec.m; sourceTree = "<group>"; };
+		54E6F04D16634AC600EBE3ED /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libKiwi.a; path = "Frameworks/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E6F04E16634AC600EBE3ED /* libKiwi.a in Frameworks */,
 				54E6F01E1663470100EBE3ED /* SenTestingKit.framework in Frameworks */,
 				54E6F01F1663470100EBE3ED /* UIKit.framework in Frameworks */,
 				54E6F0201663470100EBE3ED /* Foundation.framework in Frameworks */,
@@ -87,6 +89,7 @@
 		54E6EFEA1663470100EBE3ED = {
 			isa = PBXGroup;
 			children = (
+				54E6F04D16634AC600EBE3ED /* libKiwi.a */,
 				54E6EFFF1663470100EBE3ED /* TV Guide */,
 				54E6F0231663470100EBE3ED /* TV GuideTests */,
 				54E6EFF81663470100EBE3ED /* Frameworks */,
@@ -119,9 +122,9 @@
 			children = (
 				54E6F0081663470100EBE3ED /* BILAppDelegate.h */,
 				54E6F0091663470100EBE3ED /* BILAppDelegate.m */,
-				54E6F0111663470100EBE3ED /* BILViewController.h */,
-				54E6F0121663470100EBE3ED /* BILViewController.m */,
-				54E6F0141663470100EBE3ED /* BILViewController.xib */,
+				54E6F0111663470100EBE3ED /* BILTVGuideViewController.h */,
+				54E6F0121663470100EBE3ED /* BILTVGuideViewController.m */,
+				54E6F0141663470100EBE3ED /* BILTVGuideViewController.xib */,
 				54E6F0001663470100EBE3ED /* Supporting Files */,
 			);
 			path = "TV Guide";
@@ -144,8 +147,7 @@
 		54E6F0231663470100EBE3ED /* TV GuideTests */ = {
 			isa = PBXGroup;
 			children = (
-				54E6F0291663470100EBE3ED /* TV_GuideTests.h */,
-				54E6F02A1663470200EBE3ED /* TV_GuideTests.m */,
+				54E6F04A166349FE00EBE3ED /* Controllers */,
 				54E6F0241663470100EBE3ED /* Supporting Files */,
 			);
 			path = "TV GuideTests";
@@ -158,6 +160,14 @@
 				54E6F0261663470100EBE3ED /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54E6F04A166349FE00EBE3ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54E6F04B16634A1500EBE3ED /* BILTVGuideControllerSpec.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +246,7 @@
 				54E6F00C1663470100EBE3ED /* Default.png in Resources */,
 				54E6F00E1663470100EBE3ED /* Default@2x.png in Resources */,
 				54E6F0101663470100EBE3ED /* Default-568h@2x.png in Resources */,
-				54E6F0161663470100EBE3ED /* BILViewController.xib in Resources */,
+				54E6F0161663470100EBE3ED /* BILTVGuideViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +283,7 @@
 			files = (
 				54E6F0061663470100EBE3ED /* main.m in Sources */,
 				54E6F00A1663470100EBE3ED /* BILAppDelegate.m in Sources */,
-				54E6F0131663470100EBE3ED /* BILViewController.m in Sources */,
+				54E6F0131663470100EBE3ED /* BILTVGuideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54E6F02B1663470200EBE3ED /* TV_GuideTests.m in Sources */,
+				54E6F04C16634A1500EBE3ED /* BILTVGuideControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,12 +314,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		54E6F0141663470100EBE3ED /* BILViewController.xib */ = {
+		54E6F0141663470100EBE3ED /* BILTVGuideViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				54E6F0151663470100EBE3ED /* en */,
 			);
-			name = BILViewController.xib;
+			name = BILTVGuideViewController.xib;
 			sourceTree = "<group>";
 		};
 		54E6F0261663470100EBE3ED /* InfoPlist.strings */ = {
@@ -405,7 +415,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TV Guide/TV Guide-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/Frameworks/Kiwi/Kiwi\"";
 				INFOPLIST_FILE = "TV GuideTests/TV GuideTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -422,7 +436,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TV Guide/TV Guide-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/Frameworks/Kiwi/Kiwi\"";
 				INFOPLIST_FILE = "TV GuideTests/TV GuideTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

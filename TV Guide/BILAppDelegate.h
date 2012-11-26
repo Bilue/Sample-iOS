@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class BILViewController;
+@class BILTVGuideViewController;
 
 @interface BILAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) BILViewController *viewController;
+@property (strong, nonatomic) BILTVGuideViewController *viewController;
 
 @end

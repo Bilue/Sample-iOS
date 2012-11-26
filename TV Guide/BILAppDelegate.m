@@ -8,7 +8,7 @@
 
 #import "BILAppDelegate.h"
 
-#import "BILViewController.h"
+#import "BILTVGuideViewController.h"
 
 @implementation BILAppDelegate
 
@@ -16,7 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[BILViewController alloc] initWithNibName:@"BILViewController" bundle:nil];
+    self.viewController = [[BILTVGuideViewController alloc] initWithNibName:@"BILTVGuideViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

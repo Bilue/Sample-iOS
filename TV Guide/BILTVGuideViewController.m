@@ -6,17 +6,18 @@
 //  Copyright (c) 2012 Bilue. All rights reserved.
 //
 
-#import "BILViewController.h"
+#import "BILTVGuideViewController.h"
 
-@interface BILViewController ()
+@interface BILTVGuideViewController ()
 
 @end
 
-@implementation BILViewController
+@implementation BILTVGuideViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"TVGuide";
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
