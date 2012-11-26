@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BILTVGuideGridView.h"
 
-@interface BILTVGuideViewController : UIViewController
+@interface BILTVGuideViewController : UIViewController <BILTVGuideGridViewDataSource> {
+    NSDateFormatter* _dateFormatter;
+}
+
+@property (nonatomic, readonly) NSDateFormatter* dateFormatter;
+@property (nonatomic, strong) IBOutlet BILTVGuideGridView* gridView;
 
 @end
