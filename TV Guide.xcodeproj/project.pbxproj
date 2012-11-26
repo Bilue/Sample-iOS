@@ -32,6 +32,8 @@
 		54E6F07A1663788500EBE3ED /* NSArray+IterationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6F0791663788500EBE3ED /* NSArray+IterationSpec.m */; };
 		54E6F07D16637B4700EBE3ED /* Episode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6F07C16637B4700EBE3ED /* Episode.m */; };
 		54E6F07F16637D5C00EBE3ED /* BILTVGuideEpisodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6F07E16637D5C00EBE3ED /* BILTVGuideEpisodeCell.m */; };
+		54E6F08216638F0C00EBE3ED /* tv-guide-cell-active~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E6F08016638F0C00EBE3ED /* tv-guide-cell-active~iphone.png */; };
+		54E6F08316638F0C00EBE3ED /* tv-guide-cell-active@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E6F08116638F0C00EBE3ED /* tv-guide-cell-active@2x~iphone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		54E6F07B16637B4700EBE3ED /* Episode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Episode.h; sourceTree = "<group>"; };
 		54E6F07C16637B4700EBE3ED /* Episode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Episode.m; sourceTree = "<group>"; };
 		54E6F07E16637D5C00EBE3ED /* BILTVGuideEpisodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILTVGuideEpisodeCell.m; sourceTree = "<group>"; };
+		54E6F08016638F0C00EBE3ED /* tv-guide-cell-active~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv-guide-cell-active~iphone.png"; sourceTree = "<group>"; };
+		54E6F08116638F0C00EBE3ED /* tv-guide-cell-active@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv-guide-cell-active@2x~iphone.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +233,8 @@
 		54E6F06F16636EEB00EBE3ED /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				54E6F08016638F0C00EBE3ED /* tv-guide-cell-active~iphone.png */,
+				54E6F08116638F0C00EBE3ED /* tv-guide-cell-active@2x~iphone.png */,
 				54E6F07016636EFC00EBE3ED /* tv-guide-cell~iphone.png */,
 				54E6F07116636EFC00EBE3ED /* tv-guide-cell@2x~iphone.png */,
 			);
@@ -331,6 +337,8 @@
 				54E6F0161663470100EBE3ED /* BILTVGuideViewController.xib in Resources */,
 				54E6F07216636EFC00EBE3ED /* tv-guide-cell~iphone.png in Resources */,
 				54E6F07316636EFC00EBE3ED /* tv-guide-cell@2x~iphone.png in Resources */,
+				54E6F08216638F0C00EBE3ED /* tv-guide-cell-active~iphone.png in Resources */,
+				54E6F08316638F0C00EBE3ED /* tv-guide-cell-active@2x~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
