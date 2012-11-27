@@ -14,6 +14,7 @@
 }
 
 @property (nonatomic, readonly) NSDateFormatter* dateFormatter;
-@property (nonatomic, strong) IBOutlet BILTVGuideGridView* gridView;
+@property (nonatomic, strong) BILTVGuideGridView* gridView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end

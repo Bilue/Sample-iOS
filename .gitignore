@@ -23,6 +23,12 @@ project.xcworkspace
 # Generated files
 VersionX-revision.h
 
+####
+# Xcode build files -
+#
+# NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "DerivedData"
+DerivedData/
+
 # build products
 build/
 
