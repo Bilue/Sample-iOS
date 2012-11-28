@@ -13,6 +13,8 @@
 #import "Service.h"
 #import "Episode.h"
 
+static const NSInteger kEpisodeIntervalInMinute = 5;
+
 @interface BILTVGuideViewController ()
 
 @end
@@ -116,8 +118,22 @@
     CGFloat cellWidth = 200;
     
     CGFloat rowHeight = [gridView.dataSource gridView:gridView heightForRowInSection:indexPath.row];
+    CGFloat cellX = cellWidth * indexPath.column;
+    
+    id object = [gridView.dataSource gridView:gridView objectForIndexPath:indexPath];
+    
+    if ([object isKindOfClass:[Episode class]]) {
+        Episode* episode = object;
+        if (indexPath.column > 0) {
+            NSIndexPath* previousEpisodeIndexPath = [NSIndexPath indexPathForRow:indexPath.row inColumn:indexPath.column - 1];
+            CGRect previousEpisodeFrame = [gridView.dataSource gridView:gridView frameForCellAtIndexPath:previousEpisodeIndexPath];
+            
+            cellX = previousEpisodeFrame.origin.x + previousEpisodeFrame.size.width;
+            cellWidth = episode.runningTime * kEpisodeIntervalInMinute;
+        }
+    }
 
-    return CGRectMake(cellWidth * indexPath.column, rowHeight * indexPath.row, cellWidth, rowHeight);
+    return CGRectMake(cellX, rowHeight * indexPath.row, cellWidth, rowHeight);
 }
 
 @end
