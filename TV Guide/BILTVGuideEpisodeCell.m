@@ -86,11 +86,11 @@ static NSUInteger kEpisodeArrayInitialCapacity = 2;
     if ([_episodes count] > 0) {
         episode =[_episodes objectAtIndex:_episodeIndex];
     }
-    _currentTitle.text = @"Data unavailable";
+    _currentTitle.text = episode.title;
     _currentTitle.frame = CGRectMake(10, 12, 160, 20);
-    _currentSubtitle.text = @"Some Episode";
+    _currentSubtitle.text = episode.synopsis;
     if (episode) {
-        _currentSubtitle.text = [self.dateFormatter stringFromDate:[NSDate date]];
+        _currentSubtitle.text = [self.dateFormatter stringFromDate:episode.startTime];
         _currentSubtitle.frame = CGRectMake(10, 30, 160, 20);
     }
 }

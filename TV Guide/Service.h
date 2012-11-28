@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * The TV Service object model class.
+ * This class represents a service channel that contains a list of episodes.
+ */
 @interface Service : NSObject {
-    @private
     NSString*           _serviceId;
     NSString*           _channelImage;
     NSString*           _serviceName;

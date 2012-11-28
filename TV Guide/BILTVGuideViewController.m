@@ -62,8 +62,18 @@
     return _episodesRequestModel;
 }
 
+- (id)gridView:(BILTVGuideGridView *)gridView objectForIndexPath:(NSIndexPath *)indexPath
+{
+    Service* service = [self.episodesRequestModel.services objectAtIndex:indexPath.row];
+    if (service.episodes.count > indexPath.row) {
+        Episode* episode = [service.episodes objectAtIndex:indexPath.column];
+        return episode;
+    }
+    return nil;
+}
+
 - (CGFloat)gridView:(BILTVGuideGridView *)gridView heightForRowInSection:(NSUInteger)section {
-    return 44.f;
+    return 60.0f;
 }
 
 - (CGFloat)widthForGridView:(BILTVGuideGridView *)gridView {
@@ -96,12 +106,18 @@
     }
     
     // Add episodes to the cell here...
+    id episode = [gridView.dataSource gridView:gridView objectForIndexPath:indexPath];
+    [cell addEpisode:episode];
     
     return cell;
 }
 
 - (CGRect)gridView:(BILTVGuideGridView *)gridView frameForCellAtIndexPath:(NSIndexPath *)indexPath {
-    return CGRectMake(200 * indexPath.column, 44 * indexPath.row, 200, 44);
+    CGFloat cellWidth = 200;
+    
+    CGFloat rowHeight = [gridView.dataSource gridView:gridView heightForRowInSection:indexPath.row];
+
+    return CGRectMake(cellWidth * indexPath.column, rowHeight * indexPath.row, cellWidth, rowHeight);
 }
 
 @end

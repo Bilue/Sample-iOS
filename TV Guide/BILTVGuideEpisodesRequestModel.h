@@ -12,9 +12,13 @@ typedef void(^BILTVGuideEpisodesRequestCompletionBlock)(void);
 
 @class Episode;
 
+/**
+ * The JSON URL request model class.
+ * This class serves to handle the URL request to retrieve the TV Guide JSON, 
+ * then parses the JSON and populate service objects and episode objects and act
+ * as the data model for controller's manipulation.
+ */
 @interface BILTVGuideEpisodesRequestModel : NSObject<NSURLConnectionDataDelegate> {
-    @private
-    
     NSString*                   _urlPath;
     NSURLConnection*            _connection;
     NSMutableData*              _data;

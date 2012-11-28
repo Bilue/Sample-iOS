@@ -26,9 +26,12 @@
         NSString* rating = [dictionary objectForKey:@"Rating"];
         NSString* shareURL = [dictionary objectForKey:@"ShareUrl"];
         
-        NSString* utcEventTimeStamp = [dictionary objectForKey:@"UtcEventTimestamp"];
+        NSString* eventTimeStamp = [dictionary objectForKey:@"EventTimestamp"];
+        NSDate* startTime = [NSDate dateWithTimeIntervalSince1970:eventTimeStamp.integerValue];
         
-        NSDate* startTime = [NSDate dateWithTimeIntervalSince1970:utcEventTimeStamp.integerValue];
+        NSString* utcEventTimeStamp = [dictionary objectForKey:@"UtcEventTimestamp"];
+        NSString* utcOffset = [dictionary objectForKey:@"UtcOffset"];
+        NSDate* UTCStartTime = [NSDate dateWithTimeIntervalSince1970:utcEventTimeStamp.integerValue];
 
         // Populate metadata for episode.
         _rating = [rating copy];
@@ -43,7 +46,9 @@
         _genre = [genre copy];
         _shareURL = [shareURL copy];
         _highDefinition = highDefinition.boolValue;
-        _utcEventTimeStamp = startTime;
+        _eventTimeStamp = startTime;
+        _utcEventTimeStamp = UTCStartTime;
+        _utcOffset = [utcOffset copy];
         _runningTime = runningTime.integerValue;
     }
     

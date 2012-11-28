@@ -87,8 +87,6 @@ static const NSTimeInterval kURLRequestTimeoutInterval = 30.0f;
         }
     }
     
-    NSLog(@"self.services.count = %d", self.services.count);
-    
     self.completionBlock();
     
     // Release reference to the connection we completed.
