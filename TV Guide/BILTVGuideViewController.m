@@ -9,6 +9,9 @@
 #import "BILTVGuideViewController.h"
 #import "BILTVGuideEpisodeCell.h"
 #import "BILTVGuideGridView.h"
+#import "BILTVGuideEpisodesRequestModel.h"
+#import "Service.h"
+#import "Episode.h"
 
 @interface BILTVGuideViewController ()
 
@@ -19,17 +22,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"TVGuide";
+    self.title = @"TV Guide";
     self.gridView = [[BILTVGuideGridView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.gridView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.gridView.dataSource = self;
     self.gridView.indicatorStyle = UIScrollViewIndicatorStyleWhite;
     
     [self.view addSubview:self.gridView];
+    
+    [self.episodesRequestModel loadEpisodes];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     [self.gridView reloadData];
 }
 
@@ -41,6 +47,21 @@
     return _dateFormatter;
 }
 
+- (BILTVGuideEpisodesRequestModel *)episodesRequestModel
+{
+    if (_episodesRequestModel == nil) {
+        _episodesRequestModel = [[BILTVGuideEpisodesRequestModel alloc] initWithURLPath:kBILTVGuideJSONURL];
+        
+        __weak BILTVGuideGridView* gridView = self.gridView;
+        BILTVGuideEpisodesRequestCompletionBlock completionBlock = ^(){
+            [gridView reloadData];
+        };
+        _episodesRequestModel.completionBlock = completionBlock;
+    }
+    
+    return _episodesRequestModel;
+}
+
 - (CGFloat)gridView:(BILTVGuideGridView *)gridView heightForRowInSection:(NSUInteger)section {
     return 44.f;
 }
@@ -50,11 +71,17 @@
 }
 
 - (NSInteger)numberOfRowsInGridView:(BILTVGuideGridView *)gridView {
-    return 16;
+    return self.episodesRequestModel.services.count;
 }
 
 - (NSUInteger)numberOfCellsInRow:(NSUInteger)row {
-    return 50;
+    // Make sure we don't hit out of bounds.  I rather show empty row than crash.
+    if (self.episodesRequestModel.services.count <= row) {
+        return 0;
+    }
+    
+    Service* service = [self.episodesRequestModel.services objectAtIndex:row];
+    return service.episodes.count;
 }
 
 - (BILTVGuideCell *)gridView:(BILTVGuideGridView *)gridView cellForIndexPath:(NSIndexPath *)indexPath {
