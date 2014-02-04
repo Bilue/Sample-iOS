@@ -34,6 +34,12 @@
 		54E6F07F16637D5C00EBE3ED /* BILTVGuideEpisodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6F07E16637D5C00EBE3ED /* BILTVGuideEpisodeCell.m */; };
 		54E6F08216638F0C00EBE3ED /* tv-guide-cell-active~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E6F08016638F0C00EBE3ED /* tv-guide-cell-active~iphone.png */; };
 		54E6F08316638F0C00EBE3ED /* tv-guide-cell-active@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 54E6F08116638F0C00EBE3ED /* tv-guide-cell-active@2x~iphone.png */; };
+		CB20516A166606CF00BD92B6 /* BILTVGuideEpisodesRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB205169166606CF00BD92B6 /* BILTVGuideEpisodesRequestModel.m */; };
+		CB20516B166606CF00BD92B6 /* BILTVGuideEpisodesRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB205169166606CF00BD92B6 /* BILTVGuideEpisodesRequestModel.m */; };
+		CB20516F16661DB100BD92B6 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20516E16661DB100BD92B6 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CB20517016661DB100BD92B6 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20516E16661DB100BD92B6 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CB2051731666207200BD92B6 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2051721666207200BD92B6 /* Service.m */; };
+		CB2051741666207200BD92B6 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2051721666207200BD92B6 /* Service.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +74,7 @@
 		54E6F0251663470100EBE3ED /* TV GuideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TV GuideTests-Info.plist"; sourceTree = "<group>"; };
 		54E6F0271663470100EBE3ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		54E6F04B16634A1500EBE3ED /* BILTVGuideControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILTVGuideControllerSpec.m; sourceTree = "<group>"; };
-		54E6F04D16634AC600EBE3ED /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libKiwi.a; path = "Frameworks/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
+		54E6F04D16634AC600EBE3ED /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKiwi.a; path = "Frameworks/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
 		54E6F0521663627100EBE3ED /* BILTVGuideGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILTVGuideGridView.h; sourceTree = "<group>"; };
 		54E6F0531663627100EBE3ED /* BILTVGuideGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILTVGuideGridView.m; sourceTree = "<group>"; };
 		54E6F0551663648800EBE3ED /* BILTVGuideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILTVGuideCell.h; sourceTree = "<group>"; };
@@ -84,6 +90,12 @@
 		54E6F07E16637D5C00EBE3ED /* BILTVGuideEpisodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILTVGuideEpisodeCell.m; sourceTree = "<group>"; };
 		54E6F08016638F0C00EBE3ED /* tv-guide-cell-active~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv-guide-cell-active~iphone.png"; sourceTree = "<group>"; };
 		54E6F08116638F0C00EBE3ED /* tv-guide-cell-active@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv-guide-cell-active@2x~iphone.png"; sourceTree = "<group>"; };
+		CB205168166606CF00BD92B6 /* BILTVGuideEpisodesRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILTVGuideEpisodesRequestModel.h; sourceTree = "<group>"; };
+		CB205169166606CF00BD92B6 /* BILTVGuideEpisodesRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILTVGuideEpisodesRequestModel.m; sourceTree = "<group>"; };
+		CB20516D16661DB100BD92B6 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		CB20516E16661DB100BD92B6 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		CB2051711666207200BD92B6 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		CB2051721666207200BD92B6 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +157,7 @@
 		54E6EFFF1663470100EBE3ED /* TV Guide */ = {
 			isa = PBXGroup;
 			children = (
+				CB20516C16661DA500BD92B6 /* Third Party Libs */,
 				54E6F074166377E000EBE3ED /* Categories */,
 				54E6F06F16636EEB00EBE3ED /* Assets */,
 				54E6F0511663623800EBE3ED /* Models */,
@@ -224,6 +237,9 @@
 		54E6F0511663623800EBE3ED /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CB2051711666207200BD92B6 /* Service.h */,
+				CB2051721666207200BD92B6 /* Service.m */,
+				CB2051661666063200BD92B6 /* JSON Retrieval */,
 				54E6F07B16637B4700EBE3ED /* Episode.h */,
 				54E6F07C16637B4700EBE3ED /* Episode.m */,
 			);
@@ -256,6 +272,24 @@
 				54E6F0791663788500EBE3ED /* NSArray+IterationSpec.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		CB2051661666063200BD92B6 /* JSON Retrieval */ = {
+			isa = PBXGroup;
+			children = (
+				CB205168166606CF00BD92B6 /* BILTVGuideEpisodesRequestModel.h */,
+				CB205169166606CF00BD92B6 /* BILTVGuideEpisodesRequestModel.m */,
+			);
+			name = "JSON Retrieval";
+			sourceTree = "<group>";
+		};
+		CB20516C16661DA500BD92B6 /* Third Party Libs */ = {
+			isa = PBXGroup;
+			children = (
+				CB20516D16661DB100BD92B6 /* JSONKit.h */,
+				CB20516E16661DB100BD92B6 /* JSONKit.m */,
+			);
+			name = "Third Party Libs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +415,9 @@
 				54E6F0771663784000EBE3ED /* NSArray+Iteration.m in Sources */,
 				54E6F07D16637B4700EBE3ED /* Episode.m in Sources */,
 				54E6F07F16637D5C00EBE3ED /* BILTVGuideEpisodeCell.m in Sources */,
+				CB20516A166606CF00BD92B6 /* BILTVGuideEpisodesRequestModel.m in Sources */,
+				CB20516F16661DB100BD92B6 /* JSONKit.m in Sources */,
+				CB2051731666207200BD92B6 /* Service.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +427,9 @@
 			files = (
 				54E6F04C16634A1500EBE3ED /* BILTVGuideControllerSpec.m in Sources */,
 				54E6F07A1663788500EBE3ED /* NSArray+IterationSpec.m in Sources */,
+				CB20516B166606CF00BD92B6 /* BILTVGuideEpisodesRequestModel.m in Sources */,
+				CB20517016661DB100BD92B6 /* JSONKit.m in Sources */,
+				CB2051741666207200BD92B6 /* Service.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,9 +555,7 @@
 				GCC_PREFIX_HEADER = "TV Guide/TV Guide-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/Frameworks/Kiwi/Kiwi\"";
 				INFOPLIST_FILE = "TV GuideTests/TV GuideTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -536,9 +574,7 @@
 				GCC_PREFIX_HEADER = "TV Guide/TV Guide-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/Frameworks/Kiwi/Kiwi\"";
 				INFOPLIST_FILE = "TV GuideTests/TV GuideTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -564,6 +600,7 @@
 				54E6F0301663470200EBE3ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54E6F0311663470200EBE3ED /* Build configuration list for PBXNativeTarget "TV GuideTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +609,7 @@
 				54E6F0331663470200EBE3ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

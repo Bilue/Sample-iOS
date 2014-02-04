@@ -12,3 +12,5 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define kBILTVGuideJSONURL @"http://jump-inapp.ninemsn.com.au/cache/region-73/listings-2012-11-29.json"

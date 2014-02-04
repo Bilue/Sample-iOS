@@ -34,6 +34,8 @@
 - (CGFloat)gridView:(BILTVGuideGridView *)gridView heightForRowInSection:(NSUInteger)section;
 - (CGFloat)widthForGridView:(BILTVGuideGridView *)gridView;
 
+- (id)gridView:(BILTVGuideGridView *)gridView objectForIndexPath:(NSIndexPath *)indexPath;
+
 @end
 
 

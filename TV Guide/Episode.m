@@ -10,4 +10,49 @@
 
 @implementation Episode
 
+- (id)initWithDictionary:(NSDictionary *)dictionary
+{
+    self = [self init];
+    
+    if (self) {
+        NSString* episodeId = [dictionary objectForKey:@"EpisodeId"];
+        NSString* title = [dictionary objectForKey:@"Title"];
+        NSString* episodeTitle = [dictionary objectForKey:@"EpisodeTitle"];
+        NSString* synopsis = [dictionary objectForKey:@"Synopsis"];
+        NSString* genre = [dictionary objectForKey:@"Genre"];
+        NSString* highDefinition = [dictionary objectForKey:@"HighDefinition"];
+        
+        NSString* runningTime = [dictionary objectForKey:@"RunningTime"];
+        NSString* rating = [dictionary objectForKey:@"Rating"];
+        NSString* shareURL = [dictionary objectForKey:@"ShareUrl"];
+        
+        NSString* eventTimeStamp = [dictionary objectForKey:@"EventTimestamp"];
+        NSDate* startTime = [NSDate dateWithTimeIntervalSince1970:eventTimeStamp.integerValue];
+        
+        NSString* utcEventTimeStamp = [dictionary objectForKey:@"UtcEventTimestamp"];
+        NSString* utcOffset = [dictionary objectForKey:@"UtcOffset"];
+        NSDate* UTCStartTime = [NSDate dateWithTimeIntervalSince1970:utcEventTimeStamp.integerValue];
+
+        // Populate metadata for episode.
+        _rating = [rating copy];
+        _episodeId = [episodeId copy];
+        _title = [title copy];
+        if ([episodeTitle isKindOfClass:[NSString class]]) {
+            _episodeTitle = [episodeTitle copy];
+        }
+        if ([synopsis isKindOfClass:[NSString class]]) {
+            _synopsis = [synopsis copy];
+        }
+        _genre = [genre copy];
+        _shareURL = [shareURL copy];
+        _highDefinition = highDefinition.boolValue;
+        _eventTimeStamp = startTime;
+        _utcEventTimeStamp = UTCStartTime;
+        _utcOffset = [utcOffset copy];
+        _runningTime = runningTime.integerValue;
+    }
+    
+    return self;
+}
+
 @end
